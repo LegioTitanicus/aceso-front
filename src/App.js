@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import { ThemeProvider } from "@material-ui/core/styles";
 
-function App() {
+import theme from "./ui/Theme";
+import AcesoAppBar from "./ui/AppBar";
+
+const App = () => {
+  const [value, setValue] = useState(2);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
   return (
-    <div className="App">
-      <h1>Test render</h1>
-    </div>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <AcesoAppBar />
+    </ThemeProvider>
   );
-}
+};
 
 export default App;
