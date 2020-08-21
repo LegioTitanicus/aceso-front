@@ -36,6 +36,8 @@
     ]
   },
   "devDependencies": {
-    "jest": "24.9.0"
+    "enzyme": "^3.11.0",
+    "jest": "24.9.0",
+    "react-test-renderer": "^16.13.1"
   }
 }
