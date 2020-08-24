@@ -2,11 +2,12 @@ import React from 'react';
 import Toolbar from '@material-ui/core/Toolbar';
 import Box from '@material-ui/core/Box';
 import Container from '@material-ui/core/Container';
+import ScrollUpButton from './ScrollUpButton';
 
 const Page = props => {
   return (
     <React.Fragment>
-      <Toolbar />
+      <Toolbar id="back-to-top-anchor" />
       <Container>
         <Box my={2}>
           {[...new Array(100)].map(() => `Cras mattis consectetur purus sit amet fermentum.
@@ -17,6 +18,7 @@ const Page = props => {
           }
         </Box>
       </Container>
+      <ScrollUpButton />
     </React.Fragment>
   );
 }
