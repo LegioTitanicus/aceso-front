@@ -1,10 +1,11 @@
-import React from 'react';
-import ScrollUpButton from './ScrollUpButton';
-import { Switch, Route } from 'react-router-dom';
-import Solutions from './Solutions';
-import About from './About';
-import Contact from './Contact';
-import Demo from './Demo';
+import React from "react";
+import { Switch, Route } from "react-router-dom";
+
+import ScrollUpButton from "./ScrollUpButton";
+import Solutions from "./Solutions";
+import About from "./About";
+import Contact from "./Contact";
+import Demo from "./Demo";
 import FeatureList from "./FeatureList";
 
 const Page = (props) => {
