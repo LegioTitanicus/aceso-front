@@ -4,14 +4,17 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import theme from "./ui/Theme";
 import AcesoAppBar from "./ui/AppBar";
 import Page from "./ui/Page"
+import { BrowserRouter } from 'react-router-dom';
 
 const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <AcesoAppBar />
-      <Page />
+      <BrowserRouter>
+        <AcesoAppBar />
+        <Page />
+      </BrowserRouter>
     </ThemeProvider>
   );
 };
