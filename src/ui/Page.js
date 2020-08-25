@@ -5,8 +5,9 @@ import Solutions from './Solutions';
 import About from './About';
 import Contact from './Contact';
 import Demo from './Demo';
+import FeatureList from "./FeatureList";
 
-const Page = props => {
+const Page = (props) => {
   return (
     <React.Fragment>
       <Switch>
@@ -17,8 +18,9 @@ const Page = props => {
         <Route exact path="/demo" component={Demo} />
       </Switch>
       <ScrollUpButton />
+      <FeatureList />
     </React.Fragment>
   );
-}
+};
 
 export default Page;
