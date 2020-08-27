@@ -1,5 +1,9 @@
 import React from "react";
 import FeatureTile from "./FeatureTile";
+import image1 from "../images/doctor-handshake.jpg"
+import image2 from "../images/doctors-masks-using-tablet.jpg"
+import image3 from "../images/doctor-hands-computer.jpg"
+import image4 from "../images/masked-tab-woman.jpg"
 
 const FeatureList = () => {
   const testFill = () => {
@@ -9,7 +13,7 @@ const FeatureList = () => {
   const features = [
     {
       id: 1,
-      imgPath: "x",
+      imgPath: image1,
       mediaTitle: "x",
       titleText: "Built with every user in mind",
       description: "Whether a patient, clinician, CRO or sponsor...",
@@ -18,7 +22,7 @@ const FeatureList = () => {
     },
     {
       id: 2,
-      imgPath: "x",
+      imgPath: image2,
       mediaTitle: "x",
       titleText: "One App for Everything",
       description:
@@ -28,7 +32,7 @@ const FeatureList = () => {
     },
     {
       id: 3,
-      imgPath: "x",
+      imgPath: image3,
       mediaTitle: "x",
       titleText: "Cross-platform",
       description: "Web\nWindows\nMac\niOS\nAndroid",
@@ -37,7 +41,7 @@ const FeatureList = () => {
     },
     {
       id: 4,
-      imgPath: "x",
+      imgPath: image4,
       mediaTitle: "x",
       titleText: "Driven by Superior UX",
       description: "Taking advantage of the cutting edge Material-UI...",
