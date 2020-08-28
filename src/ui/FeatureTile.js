@@ -8,6 +8,7 @@ import {
   CardMedia,
   Button,
   Typography,
+  Grid,
 } from "@material-ui/core";
 
 const useStyles = makeStyles({
