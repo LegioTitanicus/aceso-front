@@ -7,16 +7,16 @@ import {
   CardContent,
   CardMedia,
   Button,
-  Typography,
-  Grid,
+  Typography
 } from "@material-ui/core";
 
 const useStyles = makeStyles({
   root: {
+    margin: "auto",
     maxWidth: 345,
   },
   media: {
-    height: 140,
+    height: 200,
   },
 });
 
