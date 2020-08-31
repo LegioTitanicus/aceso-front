@@ -1,13 +1,28 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
+import { makeStyles } from '@material-ui/core/styles';
 
 import FeatureTile from "./FeatureTile";
 import image1 from "../images/doctor-handshake.jpg";
 import image2 from "../images/doctors-masks-using-tablet.jpg";
 import image3 from "../images/doctor-hands-computer.jpg";
 import image4 from "../images/masked-tab-woman.jpg";
+import image5 from "../images/doc-desk.jpg"
+import image6 from "../images/doc-young-pat-tablet.png"
+import image7 from "../images/doctor-patient-tablet.jpg"
+import image8 from "../images/doctors-masks.jpg"
+import image9 from "../images/tab-steth.jpg"
+import image10 from "../images/tablet1.jpg"
+
+const useStyles = makeStyles((theme) => ({
+  grid: {
+    padding: "2.5rem 1.5rem",
+  },
+}));
 
 const FeatureList = () => {
+  const classes = useStyles();
+
   const testFill = () => {
     console.log("Hello World!");
   };
@@ -15,7 +30,7 @@ const FeatureList = () => {
   const features = [
     {
       id: 1,
-      imgPath: image1,
+      imgPath: image7,
       mediaTitle: "x",
       titleText: "Built with every user in mind",
       description: "Whether a patient, clinician, CRO or sponsor...",
@@ -43,7 +58,7 @@ const FeatureList = () => {
     },
     {
       id: 4,
-      imgPath: image4,
+      imgPath: image10,
       mediaTitle: "x",
       titleText: "Driven by Superior UX",
       description: "Taking advantage of the cutting edge Material-UI...",
@@ -54,9 +69,8 @@ const FeatureList = () => {
 
   let mappedFeatureTiles = features.map((feature) => {
     return (
-      <Grid item xs={6} med={6}>
+      <Grid key={feature.id} item xs={12} sm={6}>
         <FeatureTile
-          key={feature.id}
           imgPath={feature.imgPath}
           mediaTitle={feature.mediaTitle}
           titleText={feature.titleText}
@@ -67,7 +81,7 @@ const FeatureList = () => {
       </Grid>
     );
   });
-  return <Grid container>{mappedFeatureTiles}</Grid>;
+  return <Grid container className={classes.grid} spacing={5} >{mappedFeatureTiles}</Grid>;
 };
 
 export default FeatureList;
