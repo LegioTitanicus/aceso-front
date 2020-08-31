@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.secondary.main,
   },
   timeline: {
-    marginTop: "100px",
+    marginTop: "50px",
   },
   timelineDot: {
     color: "#ed1b2e",
@@ -65,7 +65,7 @@ const CustomizedTimeline = () => {
               <Typography>
                 • Mailers
                 <br />
-                •Existing database migration into Aceso
+                • Existing database migration into Aceso
                 <br />• Scheduling system for appointments
               </Typography>
             </Paper>
@@ -90,9 +90,9 @@ const CustomizedTimeline = () => {
                 Clinical Trial Interface
               </Typography>
               <Typography>
-                • Study Creation Tool
+                Study Creation Tool •
                 <br />
-                • eCOA
+                eCOA •
                 <br />
               </Typography>
             </Paper>
@@ -132,9 +132,9 @@ const CustomizedTimeline = () => {
                 CRO Facing System
               </Typography>
               <Typography>
-                • Querying
+                Querying •
                 <br />
-                • Metrics
+                Metrics •
                 <br />
               </Typography>
             </Paper>
@@ -180,9 +180,9 @@ const CustomizedTimeline = () => {
                 Advanced Data Visualization
               </Typography>
               <Typography>
-                • somethingSomething
+                somethingSomething •
                 <br />
-                • somethingSomething
+                somethingSomething •
                 <br />
               </Typography>
             </Paper>
@@ -221,9 +221,9 @@ const CustomizedTimeline = () => {
                 Penetration Testing
               </Typography>
               <Typography>
-                • Unparalleled Security
+                Unparalleled Security •
                 <br />
-                • HIPAA Compliant
+                HIPAA Compliant •
                 <br />
               </Typography>
             </Paper>
