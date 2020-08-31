@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.secondary.main,
   },
   timeline: {
-    marginTop: "50px",
+    marginTop: "0px",
   },
   timelineDot: {
     color: "#ed1b2e",

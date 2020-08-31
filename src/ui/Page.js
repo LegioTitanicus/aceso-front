@@ -2,24 +2,22 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 
 import ScrollUpButton from "./ScrollUpButton";
-import Solutions from "./Solutions";
 import About from "./About";
 import Contact from "./Contact";
-import Demo from "./Demo";
 import FeatureList from "./FeatureList";
+import CustomizedTimeline from "./Timeline";
 
 const Page = (props) => {
   return (
     <React.Fragment>
       <Switch>
-        <Route exact path="/" component={Solutions} />
-        <Route exact path="/solutions" component={Solutions} />
+        <Route exact path="/" component={FeatureList} />
+        <Route exact path="/solutions" component={FeatureList} />
         <Route exact path="/about" component={About} />
         <Route exact path="/contact" component={Contact} />
-        <Route exact path="/demo" component={Demo} />
+        <Route exact path="/production" component={CustomizedTimeline} />
       </Switch>
       <ScrollUpButton />
-      <FeatureList />
     </React.Fragment>
   );
 };
