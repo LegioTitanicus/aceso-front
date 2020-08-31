@@ -6,7 +6,6 @@ import { BrowserRouter } from "react-router-dom";
 import theme from "./ui/Theme";
 import AcesoAppBar from "./ui/AppBar";
 import Page from "./ui/Page";
-import CustomizedTimeline from "./ui/Timeline";
 
 const App = () => {
   return (
@@ -15,7 +14,6 @@ const App = () => {
       <Toolbar id="back-to-top-anchor" />
       <BrowserRouter>
         <AcesoAppBar />
-        <CustomizedTimeline />
         <Page />
       </BrowserRouter>
     </ThemeProvider>
