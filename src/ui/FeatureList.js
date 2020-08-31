@@ -16,7 +16,7 @@ import image10 from "../images/tablet1.jpg"
 
 const useStyles = makeStyles((theme) => ({
   grid: {
-    padding: "2.5rem 1.5rem",
+    padding: "2.5rem 1.5rem 0 1.5rem",
   },
 }));
 
@@ -32,8 +32,8 @@ const FeatureList = () => {
       id: 1,
       imgPath: image7,
       mediaTitle: "x",
-      titleText: "Built with every user in mind",
-      description: "Whether a patient, clinician, CRO or sponsor...",
+      titleText: "Universally ergomonic",
+      description: "Built with every user in mind; whether a patient, clinician, CRO or sponsor...",
       showMore: { testFill },
       actionOne: { testFill },
     },
@@ -69,7 +69,7 @@ const FeatureList = () => {
 
   let mappedFeatureTiles = features.map((feature) => {
     return (
-      <Grid key={feature.id} item xs={12} sm={6}>
+      <Grid key={feature.id} item xs={12} sm={6} md={4} >
         <FeatureTile
           imgPath={feature.imgPath}
           mediaTitle={feature.mediaTitle}
