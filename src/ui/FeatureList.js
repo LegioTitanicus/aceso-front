@@ -3,16 +3,16 @@ import { Grid } from "@material-ui/core";
 import { makeStyles } from '@material-ui/core/styles';
 
 import FeatureTile from "./FeatureTile";
-import image1 from "../images/doctor-handshake.jpg";
+import image1 from "../images/doctor-patient-tablet.jpg"
 import image2 from "../images/doctors-masks-using-tablet.jpg";
 import image3 from "../images/doctor-hands-computer.jpg";
-import image4 from "../images/masked-tab-woman.jpg";
-import image5 from "../images/doc-desk.jpg"
-import image6 from "../images/doc-young-pat-tablet.png"
-import image7 from "../images/doctor-patient-tablet.jpg"
-import image8 from "../images/doctors-masks.jpg"
-import image9 from "../images/tab-steth.jpg"
-import image10 from "../images/tablet1.jpg"
+import image4 from "../images/tablet1.jpg"
+// import image5 from "../images/doc-desk.jpg"
+// import image6 from "../images/doc-young-pat-tablet.png"
+// import image7 from "../images/doctor-handshake.jpg";
+// import image8 from "../images/doctors-masks.jpg"
+// import image9 from "../images/tab-steth.jpg"
+// import image10 from "../images/masked-tab-woman.jpg";
 
 const useStyles = makeStyles((theme) => ({
   grid: {
@@ -30,7 +30,7 @@ const FeatureList = () => {
   const features = [
     {
       id: 1,
-      imgPath: image7,
+      imgPath: image1,
       mediaTitle: "x",
       titleText: "Universally ergomonic",
       description: "Built with every user in mind; whether a patient, clinician, CRO or sponsor...",
@@ -58,7 +58,7 @@ const FeatureList = () => {
     },
     {
       id: 4,
-      imgPath: image10,
+      imgPath: image4,
       mediaTitle: "x",
       titleText: "Driven by Superior UX",
       description: "Taking advantage of the cutting edge Material-UI...",

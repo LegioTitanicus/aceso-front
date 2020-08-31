@@ -16,11 +16,8 @@ import EmojiPeopleIcon from "@material-ui/icons/EmojiPeople";
 import HelpIcon from "@material-ui/icons/Help";
 import MoodIcon from "@material-ui/icons/Mood";
 import StorageIcon from "@material-ui/icons/Storage";
-import DevicesIcon from "@material-ui/icons/Devices";
 import AssessmentIcon from "@material-ui/icons/Assessment";
-import PieChartIcon from "@material-ui/icons/PieChart";
 import SecurityIcon from "@material-ui/icons/Security";
-import EnhancedEncryptionIcon from "@material-ui/icons/EnhancedEncryption";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
