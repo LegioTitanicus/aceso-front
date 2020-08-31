@@ -7,17 +7,22 @@ import {
   CardContent,
   CardMedia,
   Button,
-  Typography
+  Typography,
+  Box
 } from "@material-ui/core";
 
 const useStyles = makeStyles({
   root: {
     margin: "auto",
-    maxWidth: 345,
+    maxWidth: 350,
+    minWidth: 285,
   },
   media: {
     height: 200,
   },
+  box: {
+    height: 80,
+  }
 });
 
 const FeatureCard = (props) => {
@@ -39,13 +44,15 @@ const FeatureCard = (props) => {
           image={imgPath}
           title={mediaTitle}
         />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            {titleText}
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            {description}
-          </Typography>
+        <CardContent >
+          <Box className={classes.box} overflow="auto">
+            <Typography gutterBottom variant="h5" component="h2">
+              {titleText}
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              {description}
+            </Typography>
+          </Box>
         </CardContent>
       </CardActionArea>
       <CardActions>
